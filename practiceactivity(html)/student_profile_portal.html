@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Portal</title>
+    <link rel="stylesheet" href="student_profile.css">
+    <link rel="icon" href="image.png">
+</head>
+
+<body>
+    <header id="home">
+        <h1>Student Profile Portal</h1>
+
+        <p>
+            Welcome to my student profile :) This page contains my personal
+            information, academic records, and a registration and feedback form.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> 
+        <a href="#profile">Profile</a> 
+        <a href="#grades">Grades</a> 
+        <a href="#registration">Contact</a>
+    </nav>
+
+    <aside>
+        <h2>Quick Profile</h2>
+
+        <p><strong>Name:</strong> Jeon Wonwoo</p>
+        <p><strong>Course:</strong> Bachelor of Science in Information Technology Major in Business Analytics</p>
+        <p><strong>Year Level:</strong> 3rd Year</p>
+        <p><strong>School:</strong> Batangas State University-TNEU, Alangilan Campus</p>
+
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Photography</li>
+            <li>Gaming</li>
+            <li>Reading</li>
+        </ul>
+    </aside>
+
+    <main>
+
+        <section id="profile">
+
+            <h2>About Me</h2>
+
+            <article>
+                <h3>My Profile</h3>
+
+                <p>
+                    Hello! My name is
+                    <span>Jeon Wonwoo</span>.
+                    I am a <b>third-year student</b> taking up
+                    <i>Bachelor of Science in Information Technology</i>.
+                </p>
+
+                <p>
+                    I would describe myself as a <strong>quiet and easygoing person</strong>
+                    who enjoys spending my free time doing things I like. I may not always
+                    be the most talkative, but <em>I enjoy getting to know people and experiencing new things
+                    at my own pace.</em>
+                </p>
+
+                <p>
+                    One of my goals is to become more
+                    <span>confident in using technology</span> and develop skills
+                    that I can use in my future career.
+                </p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>My Interests</h3>
+
+                <p>
+                    I'am interesed in <b>web development</b>,
+                    <i>analyzing datas </i>, and learning about different
+                    information technology tools.
+                    I believe that being <strong>curious</strong> and
+                    <em>open to learning</em> can help me improve :)
+                </p>
+            </article>
+
+        </section>
+
+        <section id="media">
+
+            <h2>Media & Multimedia</h2>
+
+            <figure>
+                <img
+                    src="wonu.jpg"
+                    alt="A photo taken during a regular school day"
+                    width="600"
+                    height="350"
+                >
+
+                <figcaption>
+                    Just a random photo taken during a regular school day.
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <section id="grades">
+
+            <h2>Academic Record</h2>
+
+            <table border="1">
+
+                <caption>
+                    Student Semester Grades
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th rowspan="2">Student Name</th>
+                        <th rowspan="2">Subject</th>
+                        <th rowspan="2">Units</th>
+                        <th colspan="2">Grade</th>
+                    </tr>
+
+                    <tr>
+                        <th>Midterm</th>
+                        <th>Final</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td rowspan="5">Jeon Wonwoo</td>
+                        <td>System Analysis & Design</td>
+                        <td>3</td>
+                        <td>90</td>
+                        <td>94</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fundamentals of Analytics Modeling</td>
+                        <td>3</td>
+                        <td>88</td>
+                        <td>92</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fundamentals of Business Analytics</td>
+                        <td>3</td>
+                        <td>91</td>
+                        <td>93</td>
+                    </tr>
+
+                    <tr>
+                        <td>System Integration</td>
+                        <td>3</td>
+                        <td>89</td>
+                        <td>91</td>
+                    </tr>
+
+                    <tr>
+                        <td>Web Systems</td>
+                        <td>3</td>
+                        <td>92</td>
+                        <td>95</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total Units</strong></td>
+                        <td><strong>15</strong></td>
+                        <td colspan="2"><strong>Overall GPA: 91.5</strong></td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <section id="registration">
+
+            <h2>Interactive Registration / Feedback Form</h2>
+
+            <p>
+                Please fill out the form below with your information and preferences.
+            </p>
+
+            <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+
+                <label for="fullname">Full Name:</label><br>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+                <br><br>
+
+                <label for="phone">Telephone Number:</label><br>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="09XXXXXXXXX"
+                    pattern="[0-9]{11}"
+                    title="enter an 11-digit telephone number."
+                    required
+                >
+
+                <br><br>
+
+                <label for="course">Course Track:</label><br>
+
+                <select id="course" name="course" required>
+
+                    <option value="">Select a Course Track</option>
+
+                    <optgroup label="Computer Science">
+                        <option value="computer-science">Computer Science</option>
+                        <option value="software-development">Software Development</option>
+                        <option value="data-science">Data Science</option>
+                    </optgroup>
+
+                    <optgroup label="Information Technology">
+                        <option value="information-technology">Information Technology</option>
+                        <option value="business-analytics">Business Analytics</option>
+                        <option value="web-development">Web Development</option>
+                    </optgroup>
+
+                </select>
+
+                <br><br>
+
+                <label for="programming-language">
+                    Favorite Programming Language:
+                </label><br>
+
+                <input
+                    list="programming-languages"
+                    id="programming-language"
+                    name="programming-language"
+                    placeholder="Choose or type a language"
+                >
+
+                <datalist id="programming-languages">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="Python">
+                    <option value="Java">
+                    <option value="C++">
+                    <option value="PHP">
+                </datalist>
+
+                <br><br>
+
+                <fieldset>
+
+                    <legend>Elective Choices</legend>
+
+                    <p>Select where you are interested:</p>
+
+                    <input type="checkbox" id="web-design" name="electives" value="web-design">
+                    <label for="web-design">Web Design</label>
+
+                    <br>
+
+                    <input type="checkbox" id="mobile-development" name="electives" value="mobile-development">
+                    <label for="mobile-development">Mobile Development</label>
+
+                    <br>
+
+                    <input type="checkbox" id="data-analysis" name="electives" value="data-analysis">
+                    <label for="data-analysis">Data Analysis</label>
+
+                    <br>
+
+                    <input type="checkbox" id="graphic-design" name="electives" value="graphic-design">
+                    <label for="graphic-design">Graphic Design</label>
+
+                </fieldset>
+
+                <br>
+
+                <label for="profile-file">Upload a File:</label><br>
+
+                <input
+                    type="file"
+                    id="profile-file"
+                    name="profile-file"
+                >
+
+                <br><br>
+
+                <label for="feedback">Feedback / Message:</label>
+
+                <br>
+
+                <textarea
+                    id="feedback"
+                    name="feedback"
+                    rows="6"
+                    cols="50"
+                    placeholder="Enter your feedback or message here..."
+                ></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            2026 Student Profile Portal.
+        </p>
+
+        <p>
+            Marielle Coderes & Darryll Fauni.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
